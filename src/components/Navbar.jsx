@@ -33,7 +33,9 @@ export default function Navbar() {
         <div className="flex gap-5">
           {routes.map((route, index) => (
             <NavLink
-              className={({ isActive }) => (isActive ? "text-indigo-500" : "")}
+              className={({ isActive }) =>
+                isActive ? "text-indigo-500" : "hover:text-indigo-500"
+              }
               key={index}
               to={route.path}
             >

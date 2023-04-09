@@ -1,0 +1,232 @@
+[
+  {
+    "id": "1234",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "ABC Corporation",
+    "jobType": "Full Time",
+    "address": "123 Main St, Anytown, USA",
+    "salary": "$80,000 - $100,000",
+    "contactInformation": {
+      "name": "Jane Smith",
+      "email": "jane.smith@abccorp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking an experienced marketing manager to join our team...",
+    "jobResponsibilities": [
+      "Develop and implement marketing strategies",
+      "Analyze market trends and competition",
+      "Manage marketing campaigns and budgets",
+      "Collaborate with cross-functional teams to achieve business goals"
+    ],
+    "educationalRequirements": "Bachelor's degree in Marketing or related field",
+    "experience": "5+ years of experience in marketing"
+  },
+  {
+    "id": "7890",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Front End Developer",
+    "companyName": "XYZ Corporation",
+    "jobType": "Remote",
+    "address": "",
+    "salary": "$90,000 - $110,000",
+    "contactInformation": {
+      "name": "Bob Johnson",
+      "email": "bob.johnson@xyzcorp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're looking for a skilled front-end developer to join our remote team...",
+    "jobResponsibilities": [
+      "Build responsive web pages and applications",
+      "Collaborate with designers and back-end developers",
+      "Optimize website performance and user experience",
+      "Stay up-to-date with industry trends and technologies"
+    ],
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "3+ years of experience in front-end development"
+  },
+  {
+    "id": "2345",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Data Analyst",
+    "companyName": "123 Corporation",
+    "jobType": "On Site",
+    "address": "456 Oak St, Anytown, USA",
+    "salary": "$70,000 - $90,000",
+    "contactInformation": {
+      "name": "Tom Lee",
+      "email": "tom.lee@123corp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking a data analyst to help us analyze and interpret our data...",
+    "jobResponsibilities": [
+      "Collect, process, and analyze large data sets",
+      "Create reports and visualizations to communicate insights",
+      "Collaborate with cross-functional teams to identify opportunities for improvement",
+      "Maintain and update databases and data models"
+    ],
+    "educationalRequirements": "Bachelor's degree in Statistics or related field",
+    "experience": "2+ years of experience in data analysis"
+  },
+  {
+    "id": "4567",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Sales Representative",
+    "companyName": "456 Corporation",
+    "jobType": "Full Time",
+    "address": "789 Maple St, Anytown, USA",
+    "salary": "$50,000 - $70,000",
+    "contactInformation": {
+      "name": "Sarah Davis",
+      "email": "sarah.davis@456corp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're looking for a motivated sales representative to join our team...",
+    "jobResponsibilities": [
+      "Generate leads and identify new business opportunities",
+      "Build and maintain relationships with clients",
+      "Negotiate contracts and close deals",
+      "Stay up-to-date with industry trends and competition"
+    ],
+    "educationalRequirements": "Bachelor's degree in Business Administration or related field",
+    "experience": "1+ years of experience in sales"
+  },
+  {
+    "id": "4546",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Graphic Designer",
+    "companyName": "789 Corporation",
+    "jobType": "Full Time",
+    "address": "321 Elm St, Anytown, USA",
+    "salary": "$60,000 - $80,000",
+    "contactInformation": {
+      "name": "Alex Martinez",
+      "email": "alex.martinez@789corp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking a creative graphic designer to join our team...",
+    "jobResponsibilities": [
+      "Design and create visual assets for digital and print media",
+      "Collaborate with cross-functional teams to ensure brand consistency",
+      "Stay up-to-date with design trends and technologies",
+      "Manage multiple projects and meet deadlines"
+    ],
+    "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
+    "experience": "3+ years of experience in graphic design"
+  },
+  {
+    "id": "8901",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Human Resources Manager",
+    "companyName": "ABC Inc.",
+    "jobType": "Full Time",
+    "address": "246 Oak St, Anytown, USA",
+    "salary": "$90,000 - $110,000",
+    "contactInformation": {
+      "name": "Emily Kim",
+      "email": "emily.kim@abcinc.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking an experienced HR manager to lead our HR department...",
+    "jobResponsibilities": [
+      "Develop and implement HR policies and procedures",
+      "Manage employee relations and communications",
+      "Oversee recruitment and onboarding processes",
+      "Provide guidance and support to managers and employees"
+    ],
+    "educationalRequirements": "Bachelor's degree in Human Resources or related field",
+    "experience": "5+ years of experience in HR management"
+  },
+  {
+    "id": "0123",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Operations Coordinator",
+    "companyName": "XYZ Inc.",
+    "jobType": "On Site",
+    "address": "369 Maple St, Anytown, USA",
+    "salary": "$40,000 - $60,000",
+    "contactInformation": {
+      "name": "Mark Johnson",
+      "email": "mark.johnson@xyzinc.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking an operations coordinator to support our daily operations...",
+    "jobResponsibilities": [
+      "Assist with inventory management and order fulfillment",
+      "Coordinate with suppliers and logistics providers",
+      "Maintain accurate records and documentation",
+      "Assist with process improvement initiatives"
+    ],
+    "educationalRequirements": "Associate's degree in Business Administration or related field",
+    "experience": "2+ years of experience in operations or logistics"
+  },
+  {
+    "id": "3456",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Software Developer",
+    "companyName": "678 Corporation",
+    "jobType": "Remote",
+    "address": "Remote",
+    "salary": "$80,000 - $100,000",
+    "contactInformation": {
+      "name": "David Lee",
+      "email": "david.lee@678corp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking a skilled software developer to join our team...",
+    "jobResponsibilities": [
+      "Design and develop software applications",
+      "Collaborate with cross-functional teams to define requirements",
+      "Write clean and efficient code",
+      "Debug and troubleshoot issues"
+    ],
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "5+ years of experience in software development"
+  },
+  {
+    "id": "5678",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "901 Corp.",
+    "jobType": "Full Time",
+    "address": "987 Main St, Anytown, USA",
+    "salary": "$100,000 - $120,000",
+    "contactInformation": {
+      "name": "Rachel Brown",
+      "email": "rachel.brown@901corp.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking a strategic marketing manager to lead our marketing efforts...",
+    "jobResponsibilities": [
+      "Develop and execute marketing campaigns",
+      "Manage marketing budgets and resources",
+      "Analyze market trends and consumer insights",
+      "Collaborate with cross-functional teams to drive business growth"
+    ],
+    "educationalRequirements": "Bachelor's degree in Marketing or related field",
+    "experience": "7+ years of experience in marketing"
+  },
+  {
+    "id": "6789",
+    "companyLogo": "https://example.com/logo.png",
+    "jobTitle": "Accountant",
+    "companyName": "234 Inc.",
+    "jobType": "On Site",
+    "address": "555 Pine St, Anytown, USA",
+    "salary": "$60,000 - $80,000",
+    "contactInformation": {
+      "name": "John Smith",
+      "email": "john.smith@234inc.com",
+      "phone": "555-123-4567"
+    },
+    "jobDescription": "We're seeking a detail-oriented accountant to manage our finances...",
+    "jobResponsibilities": [
+      "Prepare financial statements and reports",
+      "Manage accounts payable and receivable",
+      "Perform month-end and year-end closing processes",
+      "Ensure compliance with accounting standards and regulations"
+    ],
+    "educationalRequirements": "Bachelor's degree in Accounting or related field",
+    "experience": "3+ years of experience in accounting"
+  }
+]
