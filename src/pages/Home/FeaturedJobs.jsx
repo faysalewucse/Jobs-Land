@@ -1,6 +1,8 @@
 import React from "react";
+import FeaturedJob from "../../components/cards/FeaturedJob";
+import CommonHeader from "../../components/CommonHeader";
 
-export default function FeaturedJobs() {
+export default function FeaturedJobs({ jobs }) {
   return (
     <div className="bg-white p-10">
       <div className="max-w-7xl mx-auto">
@@ -10,14 +12,9 @@ export default function FeaturedJobs() {
             "Explore thousands of job opportunities with all the information you need. Its your future"
           }
         />
-        <div className="flex justify-center gap-5">
-          {job_categories.map(({ icon, title, available_jobs }, index) => (
-            <JobCategoryCard
-              key={index}
-              icon={icon}
-              title={title}
-              available_jobs={available_jobs}
-            />
+        <div className="grid grid-cols-2 gap-5">
+          {jobs.map((job, index) => (
+            <FeaturedJob key={index} job={job} />
           ))}
         </div>
       </div>

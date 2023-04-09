@@ -16,6 +16,7 @@ function App() {
         {
           path: "/",
           element: <Home />,
+          loader: () => fetch("jobs.json"),
         },
         {
           path: "statistics",
