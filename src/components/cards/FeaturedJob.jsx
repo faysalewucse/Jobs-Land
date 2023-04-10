@@ -22,7 +22,7 @@ export default function FeaturedJob({ job }) {
   return (
     <div className="border border-indigo-100 p-5 rounded-md flex flex-col gap-2">
       <img
-        className="w-1/4 h-1/4 object-contain"
+        className="w-20 h-20 object-contain"
         src={companyLogo}
         alt="company-logo"
       />

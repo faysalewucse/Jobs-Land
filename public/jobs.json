@@ -1,9 +1,9 @@
 [
   {
     "id": "1234",
-    "companyLogo": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+    "companyLogo": "https://logodix.com/logo/233711.png",
     "jobTitle": "Marketing Manager",
-    "companyName": "Google",
+    "companyName": "Amazon",
     "jobType": "Remote",
     "time": "Full Time",
     "address": "123 Main St, Anytown, USA",
@@ -25,7 +25,7 @@
   },
   {
     "id": "7890",
-    "companyLogo": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202106180853",
+    "companyLogo": "https://logodix.com/logo/4094.png",
     "jobTitle": "Front End Developer",
     "companyName": "Apple",
     "jobType": "Remote",
