@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Statistics from "./pages/Statistics";
 import AppliedJobs from "./pages/AppliedJobs";
 import Blog from "./pages/Blog";
+import JobDetails from "./pages/JobDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ function App() {
         {
           path: "blog",
           element: <Blog />,
+        },
+        {
+          path: "jobdetails/:jobid",
+          element: <JobDetails />,
         },
       ],
     },

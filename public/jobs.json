@@ -1,10 +1,11 @@
 [
   {
     "id": "1234",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
     "jobTitle": "Marketing Manager",
-    "companyName": "ABC Corporation",
-    "jobType": "Full Time",
+    "companyName": "Google",
+    "jobType": "Remote",
+    "time": "Full Time",
     "address": "123 Main St, Anytown, USA",
     "salary": "$80,000 - $100,000",
     "contactInformation": {
@@ -24,11 +25,12 @@
   },
   {
     "id": "7890",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202106180853",
     "jobTitle": "Front End Developer",
-    "companyName": "XYZ Corporation",
+    "companyName": "Apple",
     "jobType": "Remote",
-    "address": "",
+    "time": "Part Time",
+    "address": "1234 Oak Street, Unit 567, Springfield, IL 62704",
     "salary": "$90,000 - $110,000",
     "contactInformation": {
       "name": "Bob Johnson",
@@ -47,10 +49,11 @@
   },
   {
     "id": "2345",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/481707.png",
     "jobTitle": "Data Analyst",
-    "companyName": "123 Corporation",
+    "companyName": "Hp",
     "jobType": "On Site",
+    "time": "Full Time",
     "address": "456 Oak St, Anytown, USA",
     "salary": "$70,000 - $90,000",
     "contactInformation": {
@@ -70,10 +73,11 @@
   },
   {
     "id": "4567",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/37.png",
     "jobTitle": "Sales Representative",
-    "companyName": "456 Corporation",
-    "jobType": "Full Time",
+    "companyName": "Tesla",
+    "jobType": "On Site",
+    "time": "Part Time",
     "address": "789 Maple St, Anytown, USA",
     "salary": "$50,000 - $70,000",
     "contactInformation": {
@@ -93,10 +97,11 @@
   },
   {
     "id": "4546",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/1657.png",
     "jobTitle": "Graphic Designer",
-    "companyName": "789 Corporation",
-    "jobType": "Full Time",
+    "companyName": "Nike",
+    "jobType": "On Site",
+    "time": "Full Time",
     "address": "321 Elm St, Anytown, USA",
     "salary": "$60,000 - $80,000",
     "contactInformation": {
@@ -116,10 +121,11 @@
   },
   {
     "id": "8901",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/4974.png",
     "jobTitle": "Human Resources Manager",
-    "companyName": "ABC Inc.",
-    "jobType": "Full Time",
+    "companyName": "FedEx",
+    "jobType": "On Site",
+    "time": "Part Time",
     "address": "246 Oak St, Anytown, USA",
     "salary": "$90,000 - $110,000",
     "contactInformation": {
@@ -139,10 +145,11 @@
   },
   {
     "id": "0123",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/4346.png",
     "jobTitle": "Operations Coordinator",
-    "companyName": "XYZ Inc.",
+    "companyName": "LinkedIn",
     "jobType": "On Site",
+    "time": "Full Time",
     "address": "369 Maple St, Anytown, USA",
     "salary": "$40,000 - $60,000",
     "contactInformation": {
@@ -162,11 +169,12 @@
   },
   {
     "id": "3456",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/1826119.png",
     "jobTitle": "Software Developer",
-    "companyName": "678 Corporation",
+    "companyName": "RayBan",
     "jobType": "Remote",
-    "address": "Remote",
+    "time": "Full Time",
+    "address": "980 Main St, Anytown, USA",
     "salary": "$80,000 - $100,000",
     "contactInformation": {
       "name": "David Lee",
@@ -185,10 +193,11 @@
   },
   {
     "id": "5678",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/35546.jpg",
     "jobTitle": "Marketing Manager",
-    "companyName": "901 Corp.",
-    "jobType": "Full Time",
+    "companyName": "Adidas Technologies",
+    "jobType": "On Site",
+    "time": "Full Time",
     "address": "987 Main St, Anytown, USA",
     "salary": "$100,000 - $120,000",
     "contactInformation": {
@@ -208,10 +217,11 @@
   },
   {
     "id": "6789",
-    "companyLogo": "https://example.com/logo.png",
+    "companyLogo": "https://logodix.com/logo/4032.png",
     "jobTitle": "Accountant",
-    "companyName": "234 Inc.",
+    "companyName": "YouTube",
     "jobType": "On Site",
+    "time": "Part Time",
     "address": "555 Pine St, Anytown, USA",
     "salary": "$60,000 - $80,000",
     "contactInformation": {

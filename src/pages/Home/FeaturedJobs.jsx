@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturedJob from "../../components/cards/FeaturedJob";
 import CommonHeader from "../../components/CommonHeader";
+import PrimaryButton from "../../components/PrimaryButton";
 
 export default function FeaturedJobs({ jobs }) {
   return (
@@ -13,10 +14,11 @@ export default function FeaturedJobs({ jobs }) {
           }
         />
         <div className="grid grid-cols-2 gap-5">
-          {jobs.map((job, index) => (
+          {jobs?.map((job, index) => (
             <FeaturedJob key={index} job={job} />
           ))}
         </div>
+        <PrimaryButton text={"See All"} style={"w-1/4 mx-auto mt-5"} />
       </div>
     </div>
   );
