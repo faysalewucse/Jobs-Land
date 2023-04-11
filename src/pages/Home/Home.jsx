@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HeroSection from "./HeroSection";
 import JobCategories from "./JobCategories";
 import FeaturedJobs from "./FeaturedJobs";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <JobCategories />
       <FeaturedJobs />
+      <Footer />
     </div>
   );
 }
