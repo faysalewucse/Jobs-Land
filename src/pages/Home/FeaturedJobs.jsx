@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FeaturedJob from "../../components/cards/FeaturedJob";
 import CommonHeader from "../../components/CommonHeader";
 import PrimaryButton from "../../components/PrimaryButton";
 
-export default function FeaturedJobs({ jobs }) {
+export default function FeaturedJobs() {
+  const [loadedJobs, setLoadedJobs] = useState([]);
+  const [jobs, setJobs] = useState([]);
+  const [seeAll, setSeeAll] = useState(false);
+
+  useEffect(() => {
+    const fetchJobs = async () => {
+      const response = await fetch("/jobs.json");
+      const data = await response.json();
+      setLoadedJobs(data);
+      setJobs(data.slice(0, 4));
+    };
+
+    fetchJobs();
+  }, []);
+
+  const seeAllJob = () => {
+    setSeeAll(true);
+    setJobs(loadedJobs);
+  };
+
   return (
     <div className="bg-white p-10">
       <div className="max-w-7xl mx-auto">
@@ -18,7 +38,13 @@ export default function FeaturedJobs({ jobs }) {
             <FeaturedJob key={index} job={job} />
           ))}
         </div>
-        <PrimaryButton text={"See All"} style={"w-1/4 mx-auto mt-5"} />
+        {!seeAll && (
+          <PrimaryButton
+            onClickHandler={seeAllJob}
+            text={"See All"}
+            style={"w-1/4 mx-auto mt-5"}
+          />
+        )}
       </div>
     </div>
   );

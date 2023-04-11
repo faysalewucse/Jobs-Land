@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import vector1 from "../assets/Vector-1.png";
 import vector2 from "../assets/Vector-2.png";
-
 import {
   faCalendarWeek,
   faCircleDollarToSlot,
