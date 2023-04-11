@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import vector1 from "../assets/Vector-1.png";
-import vector2 from "../assets/Vector-2.png";
 import {
   faCalendarWeek,
   faCircleDollarToSlot,
@@ -13,6 +12,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BottomNavbar from "../components/BottomNavbar";
 
 export default function JobDetails() {
   // small component for right side container information
@@ -58,20 +58,18 @@ export default function JobDetails() {
       }
       appliedJobs.push(jobId);
     }
-    //then push the id to the array of applied jobs
+    //else assign an array with value
     else {
       appliedJobs = [jobId];
     }
+
     //then set the new array to the local storage if the id is not already there
     localStorage.setItem("appliedJobs", JSON.stringify(appliedJobs));
     notifySuccess();
   };
   return (
     <div>
-      <header className="relative bg-indigo-50 text-center p-20 font-bold text-4xl">
-        <img className="w-72 bottom-0 left-0 absolute" src={vector2} alt="" />
-        Job Details
-      </header>
+      <BottomNavbar text={"Job Details"} />
       <img className="top-0 right-0 absolute" src={vector1} alt="" />
       <div className="max-w-7xl mx-auto p-10 flex justify-between">
         <div className="w-3/4">
