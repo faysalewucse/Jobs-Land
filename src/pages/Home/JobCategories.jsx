@@ -30,7 +30,7 @@ export default function JobCategories() {
     },
   ];
   return (
-    <div className="bg-white p-10">
+    <div className="bg-white lg:p-10 p-5">
       <div className="max-w-7xl mx-auto">
         <CommonHeader
           title={"Job Category List"}
@@ -38,7 +38,7 @@ export default function JobCategories() {
             "Explore thousands of job opportunities with all the information you need. Its your future"
           }
         />
-        <div className="flex justify-center gap-5">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
           {job_categories.map(({ icon, title, available_jobs }, index) => (
             <JobCategory
               key={index}

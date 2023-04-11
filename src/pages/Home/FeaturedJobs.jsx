@@ -22,7 +22,7 @@ export default function FeaturedJobs({ JOBS }) {
             "Explore thousands of job opportunities with all the information you need. Its your future"
           }
         />
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 gap-5">
           {jobs?.map((job, index) => (
             <FeaturedJob key={index} job={job} />
           ))}
@@ -31,7 +31,7 @@ export default function FeaturedJobs({ JOBS }) {
           <PrimaryButton
             onClickHandler={seeAllJob}
             text={"See All"}
-            style={"w-1/4 mx-auto mt-5"}
+            style={"lg:w-1/4 mx-auto mt-5"}
           />
         )}
       </div>

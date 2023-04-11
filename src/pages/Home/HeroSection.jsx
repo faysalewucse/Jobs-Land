@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="max-w-7xl mx-auto flex items-center justify-between p-10">
       <div className="flex flex-col gap-4">
-        <h1 className="font-bold text-7xl">
+        <h1 className="font-bold text-5xl text-center lg:text-left lg:text-7xl">
           One Step Closer To Your{" "}
           <GradientText
             text={"Dream Job"}
@@ -19,9 +19,12 @@ export default function HeroSection() {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <PrimaryButton text={"Get Started"} style={"w-1/4"} />
+        <PrimaryButton
+          text={"Get Started"}
+          style={"w-1/2 mx-auto lg:mx-0 lg:w-1/4"}
+        />
       </div>
-      <img className="w-1/2" src={heroImage} alt="hero" />
+      <img className="hidden md:block md:w-1/2" src={heroImage} alt="hero" />
     </div>
   );
 }

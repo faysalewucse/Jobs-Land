@@ -50,7 +50,7 @@ export default function FeaturedJob({ job, horizontal }) {
               {time}
             </h1>
           </div>
-          <div className="flex gap-5">
+          <div className="flex lg:flex-row flex-col lg:gap-5">
             <h1 className="flex gap-2 items-center">
               <FontAwesomeIcon icon={faLocationDot} />
               {address}
@@ -65,7 +65,7 @@ export default function FeaturedJob({ job, horizontal }) {
       <PrimaryButton
         onClickHandler={() => navigate(`/jobdetails/${id}`)}
         text={"View Details"}
-        style={`${!horizontal ? "w-1/4" : "h-fit my-auto"}`}
+        style={`${!horizontal ? "lg:w-1/4" : "h-fit my-auto"}`}
       />
     </div>
   );
