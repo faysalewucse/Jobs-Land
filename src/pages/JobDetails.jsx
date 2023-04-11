@@ -1,5 +1,106 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import vector1 from "../assets/Vector-1.png";
+import vector2 from "../assets/Vector-2.png";
+
+import {
+  faCalendarWeek,
+  faCircleDollarToSlot,
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import PrimaryButton from "../components/PrimaryButton";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function JobDetails() {
-  return <div>JobDetails</div>;
+  // small component for right side container information
+  const details = (icon, text, value) => {
+    return (
+      <div className="flex items-center gap-3 mb-2">
+        <FontAwesomeIcon icon={icon} className="text-indigo-400" />
+        <p>
+          <b>{text}:</b> <span className="text-gray-400">{value}</span>
+        </p>
+      </div>
+    );
+  };
+
+  // initialize variables
+  const { jobId } = useParams();
+  const [jobDetails, setJobDetails] = useState(null);
+
+  useEffect(() => {
+    const fetchJobDetails = async () => {
+      const response = await fetch("/jobs.json");
+      const data = await response.json();
+      const matchingJob = data.find((job) => job.id === jobId);
+      setJobDetails(matchingJob);
+    };
+
+    fetchJobDetails();
+  }, [jobId]);
+
+  console.log(jobDetails);
+  return (
+    <div>
+      <header className="relative bg-indigo-50 text-center p-20 font-bold text-4xl">
+        <img className="w-72 bottom-0 left-0 absolute" src={vector2} alt="" />
+        Job Details
+      </header>
+      <img className="top-0 right-0 absolute" src={vector1} alt="" />
+      <div className="max-w-7xl mx-auto p-10 flex justify-between">
+        <div className="w-3/4">
+          <p className="mb-10 text-justify pr-10">
+            <b>Company: </b>
+            {jobDetails?.companyName}
+          </p>
+          <p className="mb-10 text-justify pr-10">
+            <b>Job Description: </b>
+            {jobDetails?.jobDescription}
+          </p>
+          <p className="mb-10 text-justify pr-10">
+            <b className="mb-5">Job Responsibility: </b>
+
+            {jobDetails?.jobResponsibilities.map((responsibility, index) => (
+              <li key={index} className="p-2">
+                {responsibility}
+              </li>
+            ))}
+          </p>
+          <p className="mb-10 text-justify pr-10">
+            <b>
+              Educational Requirements: <br />
+            </b>
+            {jobDetails?.educationalRequirements}
+          </p>
+          <p className="mb-10 text-justify pr-10">
+            <b>
+              Experiences: <br />
+            </b>
+            {jobDetails?.experience}
+          </p>
+        </div>
+        <div className="flex-grow">
+          <div className="bg-indigo-50 p-5">
+            <h1 className="font-bold text-lg">Job Details</h1>
+            <hr className="my-3 border border-indigo-100" />
+            {details(faCircleDollarToSlot, "Salary", jobDetails?.salary)}
+            {details(faCalendarWeek, "Job Title", jobDetails?.jobTitle)}
+
+            <h1 className="font-bold mt-7 text-lg">Contact Information</h1>
+            <hr className="my-3 border border-indigo-100" />
+            {details(faPhone, "Phone", jobDetails?.contactInformation.phone)}
+            {details(
+              faEnvelope,
+              "E-mail",
+              jobDetails?.contactInformation.email
+            )}
+            {details(faLocationDot, "Address", jobDetails?.address)}
+          </div>
+          <PrimaryButton text={"Apply Now"} style={"mt-5"} />
+        </div>
+      </div>
+    </div>
+  );
 }

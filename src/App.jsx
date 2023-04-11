@@ -32,7 +32,7 @@ function App() {
           element: <Blog />,
         },
         {
-          path: "jobdetails/:jobid",
+          path: "jobdetails/:jobId",
           element: <JobDetails />,
         },
       ],
