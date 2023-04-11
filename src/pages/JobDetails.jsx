@@ -11,6 +11,8 @@ import {
 import PrimaryButton from "../components/PrimaryButton";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function JobDetails() {
   // small component for right side container information
@@ -40,7 +42,30 @@ export default function JobDetails() {
     fetchJobDetails();
   }, [jobId]);
 
-  console.log(jobDetails);
+  const notifySuccess = () =>
+    toast.success("Successfully Applied to the Job.", { autoClose: 1000 });
+  const notifyError = () =>
+    toast.error("You Already Applied to this Job.", { autoClose: 1000 });
+
+  const applyNowHandler = (jobId) => {
+    //first get previous applied jobs
+    let appliedJobs = JSON.parse(localStorage.getItem("appliedJobs"));
+    // then check if jobId is already there
+    if (appliedJobs) {
+      if (appliedJobs.includes(jobId)) {
+        notifyError();
+        return;
+      }
+      appliedJobs.push(jobId);
+    }
+    //then push the id to the array of applied jobs
+    else {
+      appliedJobs = [jobId];
+    }
+    //then set the new array to the local storage if the id is not already there
+    localStorage.setItem("appliedJobs", JSON.stringify(appliedJobs));
+    notifySuccess();
+  };
   return (
     <div>
       <header className="relative bg-indigo-50 text-center p-20 font-bold text-4xl">
@@ -97,9 +122,14 @@ export default function JobDetails() {
             )}
             {details(faLocationDot, "Address", jobDetails?.address)}
           </div>
-          <PrimaryButton text={"Apply Now"} style={"mt-5"} />
+          <PrimaryButton
+            onClickHandler={() => applyNowHandler(jobDetails?.id)}
+            text={"Apply Now"}
+            style={"mt-5 hover:shadow-lg hover:shadow-indigo-300"}
+          />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
