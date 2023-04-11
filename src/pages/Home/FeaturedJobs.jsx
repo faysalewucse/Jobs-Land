@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import FeaturedJob from "../../components/cards/FeaturedJob";
 import CommonHeader from "../../components/CommonHeader";
 import PrimaryButton from "../../components/PrimaryButton";
 
-export default function FeaturedJobs() {
-  const [loadedJobs, setLoadedJobs] = useState([]);
-  const [jobs, setJobs] = useState([]);
+export default function FeaturedJobs({ JOBS }) {
+  const loadedJobs = JOBS;
+  const [jobs, setJobs] = useState(loadedJobs.slice(0, 4));
   const [seeAll, setSeeAll] = useState(false);
-
-  useEffect(() => {
-    const fetchJobs = async () => {
-      const response = await fetch("/jobs.json");
-      const data = await response.json();
-      setLoadedJobs(data);
-      setJobs(data.slice(0, 4));
-    };
-
-    fetchJobs();
-  }, []);
 
   const seeAllJob = () => {
     setSeeAll(true);

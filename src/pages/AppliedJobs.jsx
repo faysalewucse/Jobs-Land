@@ -4,10 +4,15 @@ import { useState } from "react";
 import FeaturedJob from "../components/cards/FeaturedJob";
 
 export default function AppliedJobs() {
-  const [filter, setFilter] = useState("all");
-  const [appliedJobs, setAppliedJobs] = useState(
-    JSON.parse(localStorage.getItem("appliedJobs")) || []
-  );
+  const appliedJobs = JSON.parse(localStorage.getItem("appliedJobs")) || [];
+
+  const [filteredJobs, setFilteredJobs] = useState(appliedJobs);
+
+  const filterJobs = (value) => {
+    value !== "all"
+      ? setFilteredJobs(appliedJobs.filter((job) => job.jobType === value))
+      : setFilteredJobs(appliedJobs);
+  };
 
   return (
     <div>
@@ -18,8 +23,7 @@ export default function AppliedJobs() {
           name="jobtype"
           id="jobtype"
           className="border border-indigo-200 rounded py-2 px-5 float-right outline-none"
-          defaultValue={filter}
-          onChange={(e) => setFilter(e.target.value)}
+          onChange={(e) => filterJobs(e.target.value)}
         >
           <option value="all">All</option>
           <option value="Remote">Remote</option>
@@ -29,15 +33,9 @@ export default function AppliedJobs() {
         <br />
         <br />
         <div className="flex flex-col gap-5">
-          {filter !== "all"
-            ? appliedJobs
-                .filter((job) => job.jobType === filter)
-                .map((job) => (
-                  <FeaturedJob key={job.id} job={job} horizontal={true} />
-                ))
-            : appliedJobs.map((job) => (
-                <FeaturedJob key={job.id} job={job} horizontal={true} />
-              ))}
+          {filteredJobs.map((job) => (
+            <FeaturedJob key={job.id} job={job} horizontal={true} />
+          ))}
         </div>
       </div>
     </div>

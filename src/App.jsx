@@ -17,6 +17,7 @@ function App() {
         {
           path: "/",
           element: <Home />,
+          loader: async () => await fetch("/jobs.json"),
         },
         {
           path: "statistics",
