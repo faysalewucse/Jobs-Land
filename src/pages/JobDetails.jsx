@@ -47,20 +47,20 @@ export default function JobDetails() {
   const notifyError = () =>
     toast.error("You Already Applied to this Job.", { autoClose: 1000 });
 
-  const applyNowHandler = (jobId) => {
+  const applyNowHandler = (jobDetails) => {
     //first get previous applied jobs
     let appliedJobs = JSON.parse(localStorage.getItem("appliedJobs"));
     // then check if jobId is already there
     if (appliedJobs) {
-      if (appliedJobs.includes(jobId)) {
+      if (appliedJobs.some((job) => job.id === jobDetails.id)) {
         notifyError();
         return;
       }
-      appliedJobs.push(jobId);
+      appliedJobs.push(jobDetails);
     }
     //else assign an array with value
     else {
-      appliedJobs = [jobId];
+      appliedJobs = [jobDetails];
     }
 
     //then set the new array to the local storage if the id is not already there
@@ -121,7 +121,7 @@ export default function JobDetails() {
             {details(faLocationDot, "Address", jobDetails?.address)}
           </div>
           <PrimaryButton
-            onClickHandler={() => applyNowHandler(jobDetails?.id)}
+            onClickHandler={() => applyNowHandler(jobDetails)}
             text={"Apply Now"}
             style={"mt-5 hover:shadow-lg hover:shadow-indigo-300"}
           />

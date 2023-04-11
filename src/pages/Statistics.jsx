@@ -5,7 +5,6 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -66,7 +65,7 @@ export default function Statistics() {
   return (
     <div>
       <BottomNavbar text={"Statistics"} />
-      <img className="top-0 right-0 absolute" src={vector1} alt="" />
+      <img className="top-0 right-0 absolute" src={vector1} alt="vector1" />
       <div className="max-w-7xl mx-auto p-10">
         <h1 className="font-bold text-3xl mb-5">Assignment Marks</h1>
         <h1 className="font-bold text-indigo-800   text-2xl mb-5">

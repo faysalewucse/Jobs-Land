@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-export default function FeaturedJob({ job }) {
+export default function FeaturedJob({ job, horizontal }) {
   const {
     id,
     companyLogo,
