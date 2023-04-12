@@ -5,7 +5,7 @@ import heroImage from "../../assets/job.svg";
 
 export default function HeroSection() {
   return (
-    <div className="max-w-7xl mx-auto flex items-center justify-between px-10 py-40">
+    <div className="max-w-7xl mx-auto flex items-center justify-between px-10 py-10">
       <div className="flex flex-col gap-4">
         <h1 className="font-bold text-5xl text-center lg:text-left lg:text-7xl">
           One Step Closer To Your{" "}
