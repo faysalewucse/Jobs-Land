@@ -71,8 +71,8 @@ export default function JobDetails() {
     <div>
       <BottomNavbar text={"Job Details"} />
       <img className="top-0 right-0 absolute" src={vector1} alt="" />
-      <div className="max-w-7xl mx-auto p-10 flex justify-between">
-        <div className="w-3/4">
+      <div className="max-w-7xl mx-auto p-10 md:flex justify-between">
+        <div className="md:w-3/4">
           <p className="mb-10 text-justify pr-10">
             <b>Company: </b>
             {jobDetails?.companyName}
